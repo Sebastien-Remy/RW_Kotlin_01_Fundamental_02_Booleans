@@ -24,8 +24,15 @@ fun main() {
     val isNameEmpty = myName.isEmpty()
     println("My name var is empty? $isNameEmpty")
 
-    // Challenge
+    // Challenge 1
+    // Password  must have 10 characters
+    val pasword = "1234"
+    var passwordIsSecure = pasword.length >= 10
+    println ("Password is secure (1)? $passwordIsSecure")
 
-    
+    // Challende 2
+    // Password same name length
+    passwordIsSecure = pasword.length == myName.length
+    println ("Password is secure (2)? $passwordIsSecure")
 }
 
