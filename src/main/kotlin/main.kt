@@ -78,5 +78,16 @@ fun main() {
 
     println (passwordMessage)
 
+    // Null Value
+    var nickName: String? = null
+    // nickName = "seb"
+    println(nickName)
+
+    val nickNameLength = nickName?.length?.toDouble()
+    println ("nick name $nickName, length: $nickNameLength")
+
+    // Default nickname for null value
+    val myNickName = nickName ?: myName
+    println ("nick name $myNickName, length: ${myNickName.length}")
 }
 
