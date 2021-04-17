@@ -25,7 +25,7 @@ fun main() {
 
     // Challenge 1
     // Password  must have 10 characters
-    val pasword = "1234"
+    var pasword = "1234"
     var passwordIsSecure = pasword.length >= 10
     println ("Password is secure (1)? $passwordIsSecure")
 
@@ -59,6 +59,24 @@ fun main() {
             println ("You can drive and drink (not on the same time!")
         }
     }
+
+    // Challenge 2
+    var userName = "SEBZEEZZEEZEZ"
+    var email = "tota@me.com"
+    pasword = "11"
+    var passwordMessage = if (userName.isEmpty() || email.isEmpty() || pasword.isEmpty()) {
+        "You may fill all your datad"
+        } else if (userName.length <= 6) {
+        "User name may content at least 6 characters"
+    } else if (pasword.length <= 10){
+        "Password name may content at least 10 characters"
+        } else if (!email.contains("@") || !email.contains(".") ) {
+            "User name must contains @ and dot"
+    }else {
+            "Succes"
+    }
+
+    println (passwordMessage)
 
 }
 
