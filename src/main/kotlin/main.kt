@@ -35,8 +35,8 @@ fun main() {
     println ("Password is secure (2)? $passwordIsSecure")
 
     // Operators
-    myAge = 17
-    val country = "USA"
+    myAge = 20
+    var country = "USA"
     isDrivingAge = (myAge >= 18 && country == "France") || (country == "USA" && myAge >= 16)
     println ("At $myAge years old is legal to drive in $country? $isDrivingAge")
 
@@ -50,6 +50,15 @@ fun main() {
     if(myAge >=18) println("I'm an adult") else println("I'm still underaged!")
 
     println (if (myAge >=18) "I'm an adult" else "I'm still underaged!")
+
+    // Complex If Else
+    if (myAge >= 16) {
+        if (country == "USA" && myAge <= 21) {
+            println ("You can drive but not drink")
+        } else if (country == "France" && myAge >= 21) {
+            println ("You can drive and drink (not on the same time!")
+        }
+    }
 
 }
 
